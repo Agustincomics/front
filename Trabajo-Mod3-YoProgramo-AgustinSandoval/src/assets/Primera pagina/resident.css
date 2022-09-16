@@ -1,0 +1,113 @@
+* {
+	padding: 0px;
+	font-family: 'Genos', sans-serif;
+	text-align: center;
+	color: #fff;
+}
+
+body {
+	background-color: #000;
+}
+
+.titulo__re {
+	display: block;
+	font-family: monospace;
+	font-size: 3.1em;
+	white-space: nowrap;
+	border-right: 4px solid;
+	width: 16ch;
+	color: #1520a6;
+	
+
+
+	animation: typing 2s steps(12), blink .5s infinite step-end alternate ;
+	overflow: hidden;
+}
+
+
+@keyframes typing {
+	from { width: 0; }
+}
+
+@keyframes blink {
+	50% { border-color:transparent; }
+}
+
+.p_resident {
+	font-size: 1.5em;
+	margin-bottom: 2em;
+}
+
+
+.leon_españa {
+	font-size: 1.8em;
+	margin-top: -0.3em;
+
+	
+}
+
+.p_residentxd {
+	font-size: 1.5em;
+	margin-top: 2em;
+	margin-bottom: 3.5em;
+}
+
+
+
+.disparar {
+	font-size: 1.8em;
+	margin-top: -0.3em;
+
+}
+
+.p_residentxdd {
+	font-size: 1.5em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.malhablados {
+	font-size: 1.8em;
+	margin-top: -0.3em;
+}
+
+.frases {
+	font-size: 1.3em;
+	margin-bottom: 1em;
+}
+
+.audio_re {
+	margin-bottom: 2em;
+}
+
+.trailer__re {
+	display: block;
+	font-family: monospace;
+	font-size: 3em;
+	white-space: nowrap;
+	border-right: 4px solid;
+	width: 10ch;
+	margin-top: 2em;
+	margin-bottom: 2em;
+
+
+	animation: typing 2s steps(9), blink .5s infinite step-end alternate;
+	overflow: hidden;
+}
+
+
+.video__re {
+	display: block;	
+	margin: 1px;
+	width: 400px;	
+}
+
+
+
+
+
+@media only screen and (max width: 100px) {
+	.div-responsive {
+		display: none;
+	}
+}

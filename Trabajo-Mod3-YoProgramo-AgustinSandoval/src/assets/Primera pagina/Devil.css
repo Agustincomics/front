@@ -1,0 +1,84 @@
+* {
+	padding: 0px;
+	font-family: 'Genos', sans-serif;
+	text-align: center;
+	color: #fff;
+}
+
+body {
+	background-color: #000;
+}
+
+.titulo {
+	display: block;
+	font-family: monospace;
+	font-size: 4em;
+	white-space: nowrap;
+	border-right: 4px solid;
+	width: 13ch;
+	color: #8b0000;
+	
+
+
+	animation: typing 2s steps(12), blink .5s infinite step-end alternate ;
+	overflow: hidden;
+}
+
+@keyframes typing {
+	from { width: 0; }
+}
+
+@keyframes blink {
+	50% { border-color:transparent; }
+}
+
+p {
+	font-size: 1.6em;
+	margin-top: 2em;
+	margin-bottom: 3.5em;
+}
+
+h3 {
+	margin-top: -0.3em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+.homenaje {
+	font-size: 1.8em;
+	margin-top: -0.3em;
+	color: grey;
+}
+
+.transformacion {
+	font-size: 1.8em;
+	margin-top: -0.3em;
+	color: grey;
+}
+
+.agresividad {
+	font-size: 1.8em;
+	margin-top: -0.3em;
+	color: grey;
+}
+
+.accion {
+	font-size: 1.8em;
+	margin-top: -0.3em;
+	color: grey;
+}
+
+.legado {
+	font-size: 1.8em;
+	margin-top: -0.3em;
+	color: grey;
+}
+
+video {
+	display: block;	
+	margin: 1px;
+	width: 400px;
+	margin-top: .3em;
+}

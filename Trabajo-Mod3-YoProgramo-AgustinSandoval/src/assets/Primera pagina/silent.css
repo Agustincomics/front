@@ -1,0 +1,125 @@
+* {
+	padding: 0px;
+	font-family: 'Genos', sans-serif;
+	text-align: center;
+	color: #fff;
+}
+
+body {
+	background-color: #000;
+}
+
+h1 {
+	display: block;
+	font-family: monospace;
+	font-size: 50cm;
+	white-space: nowrap;
+	border-right: 4px solid;
+	width: 13ch;
+	color: #8b0000;
+
+	
+
+
+	animation: typing 2s steps(12), blink .5s infinite step-end alternate ;
+	overflow: hidden;
+}
+
+@keyframes typing {
+	from { width: 0; }
+}
+
+@keyframes blink {
+	50% { border-color:transparent; }
+}
+
+p {
+	font-size: 1.6em;
+	margin-top: 2em;
+	margin-bottom: 3.5em;
+}
+
+.recuerdos {
+	font-size: 1.8em;
+	margin-top: -0.3em;
+	color: grey;
+}
+
+.dolor {
+	font-size: 1.8em;
+	margin-top: -0.3em;
+	color: grey;
+}
+
+.duelo {
+	font-size: 1.8em;
+	margin-top: -0.3em;
+	color: grey;
+}
+
+.mujer {
+	font-size: 1.8em;
+	margin-top: -0.3em;
+	color: grey;
+}
+
+.memorias {
+	font-size: 1.6em;
+	margin-top: -0.3em;
+	color: grey;
+}
+
+.jefe {
+	font-size: 1.7em;
+	margin-top: -0.3em;
+	color: grey;
+}
+
+.belleza {
+	margin-top: 3.5em;
+	margin-bottom: -.6em;
+	font-size: 2.5em;
+	color: #dd571c;
+}
+
+.bellezax {
+	color: #8b0000;
+}
+
+.reflejo {
+	color: #cc1100;
+	font-size: 1.2em;
+}
+
+.traumas {
+	font-size: 1.8em;
+	margin-top: -0.3em;
+	color: grey;
+}
+
+.cancion {
+	font-size: 2.2em;
+	margin-top: 1em;
+	margin-bottom: .5em;
+	color: #dd571c;
+}
+
+.luego {
+	font-size: 2.7em;
+	margin-top: 2.8em;
+	margin-bottom: -.6em;
+	color: #8b0000;
+}
+
+.sumido {
+	font-size: 1.7em;
+	margin-top: -0.3em;
+	color: grey;
+}
+
+video {
+	display: block;	
+	margin: 1px;
+	width: 400px;
+	margin-top: .3em;
+}
