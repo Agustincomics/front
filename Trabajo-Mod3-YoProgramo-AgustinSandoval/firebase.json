@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/trabajo-mod3-yo-programo-agustin-sandoval",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { persona } from '../model/persona.model';
+import { PersonaService } from '../service/persona.service';
+import { TokenService } from '../service/token.service';
 import { CargarScriptsService } from "./../cargar-scripts.service";
+
 
 @Component({
   selector: 'app-acerca-de-mi',
@@ -7,12 +11,24 @@ import { CargarScriptsService } from "./../cargar-scripts.service";
   styleUrls: ['./acerca-de-mi.component.css']
 })
 export class AcercaDeMiComponent implements OnInit {
-
-  constructor(private _CargaScripts:CargarScriptsService) {
-    _CargaScripts.carga(["scroll/scroll"]);
-   }
-
+  persona: persona = null;
+  constructor(public personaService: PersonaService, private tokenService: TokenService) { }
+  isLogged = false;
   ngOnInit(): void {
+    this.cargarPersona();
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
+  }
+
+  cargarPersona(){
+    this.personaService.detail(1).subscribe(
+      data =>{
+        this.persona = data
+      }
+      )
   }
 
 }

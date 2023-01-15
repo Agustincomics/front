@@ -1,19 +1,36 @@
 
 <section id="acerca">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-2 col-sm-1">
-          <div class="header-content-left">
-            <img class="text-center" src="./assets/img/4x4 (2)-modified.png" style="width: 100%;">
-            <h2 class="text-center">Full Stack Developer Jr</h2>
-          </div>
-        </div>
-        <div class="col-md-10 ">
-          <div class="header-content-right">
-            <h2 class="h1">Acerca de mi</h2>
-            <p>Estoy aprendiendo todo lo que puedo, para ser un mejor desarrollador de software, con ganas de progresar en este camino y hacer cosas nuevas.</p>
-          </div>
-        </div>
-      </div>
+  <button type="button" class="btn btn-primary ms-5 mb-2" routerLink="/editacercade/1" *ngIf="isLogged">
+    Editar persona
+  </button>
+  <article class="row">
+
+    <div class="col-lg-5 ms-5">
+      <img id="foto" class="text-center img-fluid" src={{persona.img}} style="width: 30%;">
+      <h2 class="text_center">{{persona.nombre}} {{persona.apellido}}</h2>
+      <h2>Full Stackssss Developer Jr</h2>
     </div>
+
+    <div class="col-lg-6">
+      <h2 class="h1">Acerca de mi</h2>
+      <p>{{persona.descripcion}}</p>
+    </div>
+      <!-- <div class="container">
+        <div class="row">
+          <div class="col-md-2 col-sm-1">
+            <div class="header-content-left">
+              <img id="foto" class="text-center img-fluid" src={{persona.img}} style="width: 100%;">
+              <h2 class="text_center">{{persona.nombre}} {{persona.apellido}}</h2>
+              <h2 class="text-center">Full Stack Developer Jr</h2>
+            </div>
+          </div>
+          <div class="col-md-10 ">
+            <div class="header-content-right">
+              <h2 class="h1">Acerca de mi</h2>
+              <p>{{persona.descripcion}}</p>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </article>
   </section>

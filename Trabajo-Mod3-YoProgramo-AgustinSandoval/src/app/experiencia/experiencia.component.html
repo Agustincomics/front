@@ -1,6 +1,11 @@
 <section id="experiencia">
-    <h2 class="h1 text-center">Experiencia (Es todo ficticio, para rellenar)</h2> 
-     <div class="container">
+    <h2 class="h1 text-center">Experiencia (Es todo ficticio, para rellenar)</h2>
+     <div class="col-lg-2">
+      <button type="button" class="btn btn-dark ms-5" routerLink="/nuevaexp" *ngIf="isLogged">
+          Nueva Experiencia
+      </button>
+     </div>
+     <!-- <div class="container">
        <div class="row">
          <div id="img-experiencia" class="col-md-3">
            <div class="content-left-1">
@@ -8,8 +13,46 @@
                <li><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/McDonald%27s_logo.svg/800px-McDonald%27s_logo.svg.png" style="width: 7em;" alt="Logo McDonald's"></li>
                <li class="mt-3"><img src="http://3.bp.blogspot.com/_9Dj5941l5iA/TJu8rcAss5I/AAAAAAAAAGo/eUjvYijAAzw/s1600/caribbean.gif" style="width: 7em;" alt="Logo Burger King"></li>
                <li class="mt-2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4vW9hK7lzFHl6Ewf__BLnP29Pl5tcxdsP_hklb7pyrjYb7iA6_x-ZykdIQhFaoq2t_4E&usqp=CAU" alt="Logo Samsung" style="width: 7em;"></li>
-             </ul>
-           </div>
+             </ul> -->
+
+          <!-- <div class="col lg 1">
+             <div class="col-lg-11">
+                <table class="table">
+                  <tbody>
+                    <tr *ngFor="let Experiencia of expe">
+                      <td>{{Experiencia.nombreE}}</td>
+                      <td>{{Experiencia.descripcionE}}</td>
+                      <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-fill"></i>Editar</button></td>
+                      <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Experiencia.id)"><i class="bi bi-trash-fill"></i>Borrar</button></td>
+                    </tr>
+                  </tbody>
+              </table>
+             </div>
+          </div>   --> 
+
+
+          <section class="mb-5 align-content-center m-5">
+
+            <table class="table w-75 mx-auto">
+                <thead>
+                  
+                </thead>
+                <tbody>
+                  <tr *ngFor="let Experiencia of expe">
+                    <td>{{Experiencia.nombreE}}</td>
+                    <td>{{Experiencia.descripcionE}}</td>
+                    <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/McDonald%27s_logo.svg/800px-McDonald%27s_logo.svg.png" style="width: 7em;" alt="Logo McDonald's"></td>
+                    <td *ngIf="isLogged"><button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}"><i class="bi bi-pencil-fill"></i>Editar</button></td>
+                    <td *ngIf="isLogged"><button class="btn btn-danger" (click)="delete(Experiencia.id)"><i class="bi bi-trash-fill"></i>Borrar</button></td>
+                  </tr>
+                </tbody>
+              </table>
+    
+            </section>
+
+
+
+          <!--  </div>
          </div>
        
        <div class="col-md-9 my-auto">
@@ -25,7 +68,7 @@
            
          
        </div>
-     </div>
-   </div>
-   </div>
-   </section>
+     </div> -->
+   <!-- </div>
+   </div> -->
+   <!-- </section> -->
