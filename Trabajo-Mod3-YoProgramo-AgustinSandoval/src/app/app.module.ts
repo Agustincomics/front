@@ -33,7 +33,6 @@ import { EditAcercadeComponent } from './acerca-de-mi/edit-acercade.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
-import { CircleProgressComponent } from "ng-circle-progress";
 
 
 
